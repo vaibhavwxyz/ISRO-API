@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background: linear-gradient(
+    to right bottom,
+    rgb(55, 65, 81),
+    rgb(18, 24, 38),
+    rgb(0, 0, 0)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+  color: #fff;
+}
+
+nav {
+  padding: 1rem 0rem;
+}
+
+.Heading {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+}
+
+main {
+  padding: 2rem 0rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+button#main {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 50px;
+}
+
+button#main:hover {
+  opacity: 0.6;
+  transition-duration: 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background-color: #654fff;
+  border: none;
+  color: black;
+  padding: 0.2rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8b82ff;
+}
+
+.center {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin-top: -10px;
+}
+
+ul {
+  flex-direction: column;
+  color: #efefef;
+  text-align: start;
+}
+/* For table and below */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    list-style: disc;
+    text-decoration: underline;
+    text-align: start;
+    align-items: start;
+    margin-left: 2rem;
+  }
+
+  ul {
+    flex-direction: column;
+    color: #efefef;
+  }
+
+  button#main {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 50px;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+}
+
+/* Adjust font size and margin for smaller screens */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin-top: -5px;
+  }
+}
